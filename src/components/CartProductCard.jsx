@@ -6,11 +6,12 @@ import '../styles/cartProductCard.css'
 function CartProductCard ({cartArr, setCartArr}) {
 
     return (
+        <div className='cartContainer'>
         <div className='cartItemContainer'>
             {cartArr.map((product) => {
                 return <CartItem key={product.id} product={product} />
-            })}
-            <CheckoutCard setCartArr={setCartArr} cartArr={cartArr} />
+            })}</div>
+            <CheckoutCard className='checkoutCardContainer' setCartArr={setCartArr} cartArr={cartArr} />
         </div>
     )
 }

@@ -1,9 +1,10 @@
 import NavBar from '../components/NavBar'
+import PropTypes from 'prop-types'
 
-function AboutPage () {
+function AboutPage ({cartArr}) {
   return (
     <>
-      <NavBar />
+      <NavBar cartArr={cartArr} />
       <p>This is a fictional store</p>
       <p>The products in this store are not real, but are provided by Fake Store API</p>
       <footer>
@@ -12,6 +13,10 @@ function AboutPage () {
         </footer>
     </>
   )
+}
+
+AboutPage.propTypes = {
+  cartArr: PropTypes.array,
 }
 
 export default AboutPage

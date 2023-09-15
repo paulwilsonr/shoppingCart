@@ -8,15 +8,16 @@ import PropTypes from 'prop-types'
 
 
 function Router ({productArr, error, loading, cartArr, setCartArr}) {
+    
     const router = createBrowserRouter([
         {
             path: '/',
-            element: <HomePage />,
-            errorElement: <ErrorPage />
+            element: <HomePage cartArr={cartArr} />,
+            errorElement: <ErrorPage cartArr={cartArr} />
         },
         {
             path: '/about',
-            element: <AboutPage />,
+            element: <AboutPage cartArr={cartArr} />,
         },
         {
             path: '/cart',

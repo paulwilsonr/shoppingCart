@@ -1,4 +1,8 @@
-.cartItemContainer {
+.cartContainer {
     display: grid;
     grid-template-columns: 1fr 400px;
+}
+
+.checkoutCardContainer {
+    grid-area: 1/2/-1/3;
 }

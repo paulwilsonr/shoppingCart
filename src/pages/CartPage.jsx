@@ -4,9 +4,8 @@ import EmptyCartCard from '../components/EmptyCartCard';
 import CartProductCard from '../components/CartProductCard';
 
 function CartPage ({cartArr, setCartArr}) {
-    console.log(cartArr)
     return <>
-    <NavBar />
+    <NavBar cartArr={cartArr} />
     {cartArr.length === 0 ? <EmptyCartCard /> : <CartProductCard setCartArr={setCartArr} cartArr={cartArr} />}
     
   </>;

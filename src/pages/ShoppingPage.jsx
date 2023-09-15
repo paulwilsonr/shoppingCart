@@ -13,14 +13,14 @@ function ShoppingPage ({ productArr, error, loading, setCartArr, cartArr }) {
   if (loading)
     return (
       <>
-        <NavBar />
+        <NavBar cartArr={cartArr} />
         <p>Loading...</p>
       </>
     )
       let filteredProductArr = filterProducts(productArr, category);
   return (
     <>
-      <NavBar />
+      <NavBar cartArr={cartArr}/>
       <CategorySelector setCategory={setCategory} currentCategory={category} />
       <div className='productCardContainer'>
         {filteredProductArr.map(product => (

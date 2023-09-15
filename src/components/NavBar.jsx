@@ -1,7 +1,9 @@
 import { NavLink } from 'react-router-dom'
 import '../styles/navBar.css'
+import CartCounter from './CartCounter'
+import PropTypes from 'prop-types'
 
-function NavBar () {
+function NavBar ({cartArr}) {
  
   return (
     <div className='navBar'>
@@ -37,9 +39,14 @@ function NavBar () {
         >
           Cart
         </NavLink>
+        <CartCounter cartArr={cartArr} />
       </nav>
     </div>
   )
+}
+
+NavBar.propTypes = {
+  cartArr: PropTypes.array,
 }
 
 export default NavBar
