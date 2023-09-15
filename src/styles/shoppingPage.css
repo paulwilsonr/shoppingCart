@@ -1,0 +1,20 @@
+.productCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.categorySelector {
+    display: flex;
+    align-items: center;
+}
+
+.categoryDropdown {
+    background-color: var(--off-white);
+    border: none;
+    text-align: center;
+}
+
+select {
+    appearance: none;
+
+}

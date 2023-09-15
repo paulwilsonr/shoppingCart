@@ -1,0 +1,19 @@
+.navBar {
+    background-color: var(--black);
+    color: var(--off-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+
+.navLink {
+    color: var(--off-white);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.currentPageLink {
+    border-bottom: var(--off-white) 3px solid;
+}

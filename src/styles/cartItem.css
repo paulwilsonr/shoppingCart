@@ -1,0 +1,30 @@
+.cartItem {
+    width: 90%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    border: solid black 1px;
+    margin: 10px;
+}
+
+.cartItemImg {
+    width: 100px;
+    grid-area: 1/1/3/2;
+}
+
+.cartItemName {
+    grid-area: 1/2/2/5;
+}
+
+.cartItemAmount {
+    grid-area: 2/2/3/3;
+}
+
+.cartItemPrice {
+    grid-area: 2/3/3/4;
+}
+
+.cartItemRemove {
+    grid-area: 2/4/3/5;
+}
