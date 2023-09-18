@@ -1,20 +1,36 @@
 .productCardContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .categorySelector {
     display: flex;
     align-items: center;
+    justify-content:start;
+    width: 200px;
+    margin: 10px 20px;
+
 }
 
+.categoryDash {
+    font-size: 10px;
+}
+
+.categorySelector * {
+    margin-left: 20px;
+}
+
+.categoryLink {
+    color: var(--black);
+    text-decoration: none;
+}
 .categoryDropdown {
-    background-color: var(--off-white);
+    background-color: var(--white);
     border: none;
-    text-align: center;
+    text-align: left;
+    
 }
 
 select {
-    appearance: none;
-
+    width: 40px;
 }

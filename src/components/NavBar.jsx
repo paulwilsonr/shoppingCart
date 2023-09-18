@@ -7,8 +7,8 @@ function NavBar ({cartArr}) {
  
   return (
     <div className='navBar'>
-      <NavLink className='navLink'  to='/'>
-        <h1>Store Name</h1>
+      <NavLink className='navLink storeNameLink'  to='/'>
+        <h1 className='storeName'>Fake Store</h1>
       </NavLink>
       <nav>
         <NavLink
@@ -33,11 +33,11 @@ function NavBar ({cartArr}) {
           About
         </NavLink>
         <NavLink
-          className={({isActive}) => (isActive ? 'navLink currentPageLink' : 'navLink')}
+          className={({isActive}) => (isActive ? 'navLink white' : 'navLink offWhite')}
           id='cart'
           to='/cart'
         >
-          Cart
+          <img src='src/assets/shopping-cart.png' className=' icon' alt='cart'></img>
         </NavLink>
         <CartCounter cartArr={cartArr} />
       </nav>

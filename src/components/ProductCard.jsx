@@ -11,7 +11,7 @@ function ProductCard ({product, setCartArr, cartArr}) {
             <p className='productCardName'>{product.title}</p>
             <p className='productCardPrice'>{'$' + product.price.toFixed(2)}</p>
             <ProductRating ratingObj={product.rating} />
-            <button onClick={() => handleAddToCart(setCartArr, product, cartArr)} >Add to Cart</button>
+            <button className='addToCartButton' onClick={() => handleAddToCart(setCartArr, product, cartArr)} ><img src='src/assets/shopping-cart.png' className='smallIcon'></img>Add to Cart</button>
         </div>
     );
 }

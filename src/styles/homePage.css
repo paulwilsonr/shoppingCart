@@ -1,0 +1,33 @@
+.homePage {
+    background-image: url("../assets/pexels-allan-so-2622170.jpg");
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.welcome {
+color: var(--white);
+margin: 0;
+padding-top: 100px;
+font-size: 35px;
+}
+
+.welcomeText {
+    color: var(--white);
+    margin: 25px auto 150px auto;
+    margin-top: 15px;
+    margin-bottom: 150px;
+    font-size: 15px;
+    text-wrap: wrap;
+    width: 1000px;
+    text-align: cente;
+}
+
+
+.shopNowButton {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 10px;
+}

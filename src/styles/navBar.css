@@ -11,9 +11,42 @@
 .navLink {
     color: var(--off-white);
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 150px;
 }
 
+.storeNameLink {
+    margin-left: 0px;
+}
+
+.storeName {
+    font-weight: 200;
+}
 .currentPageLink {
     border-bottom: var(--off-white) 3px solid;
+}
+
+.icon {
+    width: 25px;
+    position: relative;
+    top: 5px;
+}
+
+.offWhite {
+    filter:invert(70%);
+}
+
+.white {
+    filter:invert(100%)
+}
+
+.cartCount {
+    background-color: var(--blue);
+    color: var(--white);
+    width: 13px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 5px;
+    position: absolute;
+    top: 35px;
+    right: 32px;
 }

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom';
 
 function CartCounter({cartArr}) {
     if(cartArr.length === 0) {
@@ -10,7 +11,7 @@ function CartCounter({cartArr}) {
         totalItems = totalItems + item.amount;
     });
     return (
-        <p className='cartCount'>{totalItems}</p>
+        <Link to={'/cart'}><p className='cartCount'>{totalItems}</p></Link>
     )
 }
 
