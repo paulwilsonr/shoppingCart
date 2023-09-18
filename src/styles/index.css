@@ -8,15 +8,19 @@
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 button {
   border-radius: 8px;
-    padding: 4px 8px;
-    border: none;
+  padding: 4px 8px;
+  border: none;
 }
 
 .pointer {
   cursor: pointer;
+}
+
+.smallIcon {
+  width: 15px;
 }

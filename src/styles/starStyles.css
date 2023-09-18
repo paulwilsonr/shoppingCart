@@ -2,11 +2,11 @@
     position: relative;
     float: left;
     font-size: 14pt;
-	  height: 1em;
+    height: 1em;
     line-height: 1em;
 }
 
-.stars:before {	
+.stars:before {
     content: "\2606\2606\2606\2606\2606";
     float: left;
     z-index: 1;
@@ -20,7 +20,7 @@
     z-index: -1;
 }
 
-.stars .percent:after {	
+.stars .percent:after {
     content: "\2605\2605\2605\2605\2605";
     color: rgb(255, 200, 0);
 }

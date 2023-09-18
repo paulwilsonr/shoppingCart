@@ -1,10 +1,12 @@
-function filterProducts(productArr, category) {
-    if (category ==='all') {
-        return productArr;
-    }
+function filterProducts (productArr, category) {
+  if (category === 'all') {
+    return productArr
+  }
 
-    let filteredProductArr = productArr.filter((product) => product.category === category )
-    return filteredProductArr;
+  let filteredProductArr = productArr.filter(
+    product => product.category === category
+  )
+  return filteredProductArr
 }
 
-export default filterProducts;
+export default filterProducts

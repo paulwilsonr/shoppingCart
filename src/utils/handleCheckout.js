@@ -1,5 +1,5 @@
 function handleCheckout (setCartArr) {
-    setCartArr([]);
+  setCartArr([])
 }
 
-export default handleCheckout;
+export default handleCheckout

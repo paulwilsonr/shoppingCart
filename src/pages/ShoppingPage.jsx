@@ -6,7 +6,6 @@ import '../styles/shoppingPage.css'
 import { useState } from 'react'
 import filterProducts from '../utils/filterProducts'
 
-
 function ShoppingPage ({ productArr, error, loading, setCartArr, cartArr }) {
   const [category, setCategory] = useState('all')
   if (error) return <p>A network error was encountered</p>
@@ -17,14 +16,19 @@ function ShoppingPage ({ productArr, error, loading, setCartArr, cartArr }) {
         <p>Loading...</p>
       </>
     )
-      let filteredProductArr = filterProducts(productArr, category);
+  let filteredProductArr = filterProducts(productArr, category)
   return (
     <>
-      <NavBar cartArr={cartArr}/>
+      <NavBar cartArr={cartArr} />
       <CategorySelector setCategory={setCategory} currentCategory={category} />
       <div className='productCardContainer'>
         {filteredProductArr.map(product => (
-          <ProductCard key={product.id} product={product} setCartArr={setCartArr} cartArr={cartArr} />
+          <ProductCard
+            key={product.id}
+            product={product}
+            setCartArr={setCartArr}
+            cartArr={cartArr}
+          />
         ))}
       </div>
     </>
@@ -36,7 +40,7 @@ ShoppingPage.propTypes = {
   error: PropTypes.any,
   loading: PropTypes.bool,
   setCartArr: PropTypes.func,
-  cartArr: PropTypes.array,
+  cartArr: PropTypes.array
 }
 
 export default ShoppingPage
