@@ -9,7 +9,7 @@ function CartProductCard ({cartArr, setCartArr}) {
         <div className='cartContainer'>
         <div className='cartItemContainer'>
             {cartArr.map((product) => {
-                return <CartItem key={product.id} product={product} />
+                return <CartItem key={product.id} product={product} cartArr={cartArr} setCartArr={setCartArr} />
             })}</div>
             <CheckoutCard className='checkoutCardContainer' setCartArr={setCartArr} cartArr={cartArr} />
         </div>
