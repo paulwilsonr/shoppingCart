@@ -5,7 +5,7 @@ function CartItemAmount ({ product, cartArr, setCartArr }) {
   return (
     <div className='cartItemAmount'>
       <p
-        className=''
+        className='changeCartAmount pointer'
         onClick={() =>
           handleChangeAmount.subtractAmount(product, cartArr, setCartArr)
         }
@@ -14,7 +14,7 @@ function CartItemAmount ({ product, cartArr, setCartArr }) {
       </p>
       <p className='productAmount'>{product.amount}</p>
       <p
-        className=''
+        className='changeCartAmount pointer'
         onClick={() => {
           handleChangeAmount.addAmount(product, cartArr, setCartArr)
         }}

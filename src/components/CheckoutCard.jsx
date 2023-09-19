@@ -8,12 +8,12 @@ function CheckoutCard ({ setCartArr, cartArr }) {
   return (
     <div className='checkoutCard'>
       <CheckoutTotal cartArr={cartArr} />
-      <Link to={'/'}>
+      <Link className='checkoutButtonLink' to={'/'}>
         <button
           onClick={() => handleCheckout(setCartArr)}
           className='checkoutButton'
         >
-          Checkout
+          Proceed to Checkout
         </button>
       </Link>
       <img src='src/assets/creditCards.png' className='checkoutCreditCards' />

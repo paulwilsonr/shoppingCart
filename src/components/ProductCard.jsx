@@ -15,7 +15,7 @@ function ProductCard ({ product, setCartArr, cartArr }) {
       <p className='productCardPrice'>{'$' + product.price.toFixed(2)}</p>
       <ProductRating ratingObj={product.rating} />
       <button
-        className='addToCartButton'
+        className='addToCartButton pointer'
         onClick={() => handleAddToCart(setCartArr, product, cartArr)}
       >
         <img

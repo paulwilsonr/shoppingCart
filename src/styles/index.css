@@ -3,12 +3,18 @@
   --off-white: #f6f6f6;
   --white: #fff;
   --blue: #277ed4;
+  --dark-blue: #195896;
   --green: #1a7d36;
+  --dark-green: #0e5a24;
+  --dark-grey: #a2a6a6;
+  --red: #a21919;
+  --dark-red: #7b1212;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
   margin: 0;
+  background-color: var(--off-white);
 }
 
 button {

@@ -13,9 +13,9 @@ function CartItem ({ product, cartArr, setCartArr }) {
         cartArr={cartArr}
         setCartArr={setCartArr}
       />
-      <p className='cartItemPrice'>{'$' + product.price.toFixed(2)}</p>
+      <p className='cartItemPrice'>{'$' + (product.price * product.amount).toFixed(2)}</p>
       <p
-        className='cartItemRemove'
+        className='cartItemRemove pointer'
         onClick={() => removeProduct(product, cartArr, setCartArr)}
       >
         remove x
