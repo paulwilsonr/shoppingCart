@@ -65,6 +65,16 @@
     color: var(--dark-red);
 }
 
+@media screen and (max-width: 1100px) {
+    .cartItem {
+        grid-template-columns: 150px 1fr 1fr 2fr;
+    }
+    .cartItemImg {
+        margin-left: 30px;
+        width: 100px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .cartItem {
         grid-template-columns: 100px 1fr 1fr 1fr;

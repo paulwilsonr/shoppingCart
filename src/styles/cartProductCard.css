@@ -70,6 +70,10 @@ h2 {
     .cartPage {
         margin: 50px 10px 0px 0px;
     }
+
+    .cartItemContainer {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -80,6 +84,8 @@ h2 {
         width: 98vw;
         margin: 10px 5px 0px 5px
     }
+
+   
 
     .cartContainer {
         grid-template-columns: 1fr;
