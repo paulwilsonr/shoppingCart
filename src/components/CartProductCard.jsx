@@ -10,7 +10,7 @@ function CartProductCard ({ cartArr, setCartArr }) {
     <div className='cartContainer'>
       <div className='cartTitleContainer'>
       <h2 className='cartTitle'>Your Shopping Cart</h2>
-      <h2 className='cartItemCount'>{totalItems + " Items"}</h2>
+      <h2 className='cartItemCount'>{totalItems > 1 ? totalItems + " Items" : totalItems + " Item"}</h2>
       </div>
       <div className='cartItemContainer'>
         {cartArr.map(product => {

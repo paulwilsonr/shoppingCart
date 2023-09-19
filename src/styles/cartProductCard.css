@@ -21,9 +21,7 @@ h2 {
     margin-top: 0;
 }
 
-.checkoutCardContainer {
-    grid-area: 1/2/-1/3;
-}
+
 
 .emptyCartCard {
     background-color: var(--white);
@@ -58,4 +56,25 @@ h2 {
     grid-template-columns: 1fr;
     grid-auto-rows: 220px;
     align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .cartPage {
+        margin: 5px 0px;
+    }
+    .cartTitleContainer {
+        width: 98vw;
+        margin: 10px 5px 0px 5px
+    }
+
+    .cartContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 1fr 250px;
+    }
+
+    .checkoutCardContainer {
+        margin: 0px 5px 0px 5px;
+
+    }
+
 }

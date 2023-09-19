@@ -8,11 +8,29 @@
 
 }
 
+.burgerMenu {
+    display: hidden;
+    width: 100%;
+}
+
+nav {
+    visibility: visible;
+    width: 100%;
+    text-align: end;
+    text-wrap: nowrap;
+}
+
 .navLink {
     color: var(--off-white);
     text-decoration: none;
-    margin-left: 150px;
+    margin-left: clamp(20px, 10%, 150px);
 }
+
+#home {
+    margin-left: 0px;
+}
+
+
 
 .storeNameLink {
     margin-left: 0px;
@@ -20,6 +38,8 @@
 
 .storeName {
     font-weight: 200;
+    text-wrap: nowrap;
+    width: 200px;
 }
 
 .currentPageLink {
@@ -36,6 +56,17 @@
     filter: invert(70%);
 }
 
+.cartIcon > img {
+    filter: invert(70%);
+    position: relative;
+}
+
+.cartIcon.active > img {
+    filter: invert(100%)
+}
+
+
+
 .white {
     filter: invert(100%)
 }
@@ -49,5 +80,65 @@
     border-radius: 5px;
     position: absolute;
     top: 35px;
-    right: 32px;
+    right: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .burgerMenu {
+        visibility: visible;
+        border: var(--white) solid 2px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .burgerMenuIcon {
+        filter: invert(100%);
+        width: 35px;
+        height: 35px;
+        margin: 3px auto;
+    }
+
+    .cartCount {
+        top: 8px;
+        right: -5px;
+    }
+
+    nav {
+        transition: 1s ease;
+        transform: translateY(0);
+    }
+    nav.hiddenNav {
+        display: none;
+    }
+    nav.shownNav {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-evenly;
+        top: 0px;
+        right: 30px;
+        background-color: var(--black);
+        width: 100px;
+        z-index: 5;
+    }
+
+    nav:focus-visible {
+        background-color: blue;
+    }
+
+    
+
+    .navLink {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        align-self: center;
+    }
+
+    .storeNameLink {
+        color: var(--white);
+    }
 }

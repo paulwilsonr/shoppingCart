@@ -9,8 +9,8 @@
     justify-content: start;
     width: 200px;
     margin: 10px 20px;
-
 }
+
 
 .categoryDash {
     font-size: 10px;
@@ -26,7 +26,7 @@
 }
 
 .categoryDropdown {
-    background-color: var(--white);
+    background-color: var(--off-white);
     border: none;
     text-align: left;
 
@@ -34,4 +34,11 @@
 
 select {
     width: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .productCardContainer {
+        grid-template-columns: 1fr;
+    }
+
 }

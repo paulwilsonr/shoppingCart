@@ -17,6 +17,12 @@ function AboutPage ({ cartArr }) {
           href='https://www.flaticon.com/free-icons/smart-cart'
           title='smart cart icons'
         >
+          <a
+            href='https://www.flaticon.com/free-icons/navigation'
+            title='navigation icons'
+          >
+            Navigation icons created by Andy Horvath - Flaticon
+          </a>
           Smart cart icons created by Freepik - Flaticon
         </a>
         <footer className='aboutText'>

@@ -64,3 +64,17 @@
 .cartItemRemove:hover {
     color: var(--dark-red);
 }
+
+@media screen and (max-width: 480px) {
+    .cartItem {
+        grid-template-columns: 100px 1fr 1fr 1fr;
+    }
+    .cartItemImg {
+        margin-left: 20px;
+        width: 75px;
+    }
+    .cartItemRemove {
+        margin-right: 10px;
+    }
+    
+}

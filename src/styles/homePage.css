@@ -19,7 +19,7 @@
     margin-bottom: 150px;
     font-size: 15px;
     text-wrap: wrap;
-    width: 1000px;
+    max-width: 1000px;
     text-align: cente;
 }
 
@@ -30,4 +30,15 @@
     padding: 7px 20px;
     font-size: 12px;
     border-radius: 10px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .welcomeText {
+        display: none;
+    }
+
+    .welcome {
+        margin-bottom: 50px;
+    }
 }

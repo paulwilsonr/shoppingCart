@@ -1,5 +1,5 @@
 import NavBar from '../components/NavBar'
-import PropType from 'prop-types'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import '../styles/homePage.css'
 
@@ -24,7 +24,8 @@ function HomePage ({ cartArr }) {
 }
 
 HomePage.propTypes = {
-  cartArr: PropType.array
+  cartArr: PropTypes.array
 }
 
 export default HomePage
+ 
