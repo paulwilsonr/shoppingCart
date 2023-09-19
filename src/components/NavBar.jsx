@@ -40,7 +40,7 @@ function NavBar ({ cartArr }) {
           setShowNavMenu(!showNavMenu)
         } 
       }}> <img className='burgerMenuIcon smallIcon' src='src/assets/menu.png'></img>
-        <nav className={showNavMenu ? 'shownNav' : 'hiddenNav'}>
+        <nav className={showNavMenu ? 'shownNav' : ''}>
           <NavLink
             className={({ isActive }) =>
               isActive ? 'navLink currentPageLink' : 'navLink'

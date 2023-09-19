@@ -106,23 +106,26 @@ nav {
     }
 
     nav {
-        transition: 1s ease;
-        transform: translateY(0);
-    }
-    nav.hiddenNav {
-        display: none;
-    }
-    nav.shownNav {
         display: flex;
         position: relative;
         flex-direction: column;
-        height: 200px;
+        overflow: hidden;
+        transition: height 1s ease;
         justify-content: space-evenly;
         top: 0px;
         right: 30px;
         background-color: var(--black);
         width: 100px;
         z-index: 5;
+        height: 0px;
+        transition: height .5s ease;
+    }
+    
+    nav.shownNav {
+        
+        height: 200px;
+        transition: height .5s ease-out;
+        
     }
 
     nav:focus-visible {
