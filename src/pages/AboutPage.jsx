@@ -25,6 +25,7 @@ function AboutPage ({ cartArr }) {
           </a>
           Smart cart icons created by Freepik - Flaticon
         </a>
+        <a href="https://www.freepik.com/icon/online-store_4397506">Icon by Parzival’ 1997</a>
         <footer className='aboutText'>
           <p>Paul Wilson</p>
           <a href='https://github.com/paulwilsonr'>
