@@ -16,7 +16,7 @@ function CheckoutCard ({ setCartArr, cartArr }) {
           Proceed to Checkout
         </button>
       </Link>
-      <img src='src/assets/creditCards.png' className='checkoutCreditCards' />
+      <img src='public/assets/creditCards.png' className='checkoutCreditCards' /> 
     </div>
   )
 }

@@ -39,7 +39,7 @@ function NavBar ({ cartArr }) {
         if(window.innerWidth <= 480) {
           setShowNavMenu(!showNavMenu)
         } 
-      }}> <img className='burgerMenuIcon smallIcon' src='src/assets/menu.png'></img>
+      }}> <img className='burgerMenuIcon smallIcon' src='public/assets/menu.png'></img> 
         <nav className={showNavMenu ? 'shownNav' : ''}>
           <NavLink
             className={({ isActive }) =>
@@ -74,7 +74,7 @@ function NavBar ({ cartArr }) {
             to='/cart'
           >
             <img
-              src='src/assets/shopping-cart.png'
+              src='public/assets/shopping-cart.png'
               className=' icon'
               alt='cart'
             ></img>
