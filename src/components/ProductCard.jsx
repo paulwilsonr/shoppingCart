@@ -19,7 +19,7 @@ function ProductCard ({ product, setCartArr, cartArr }) {
         onClick={() => handleAddToCart(setCartArr, product, cartArr)}
       >
         <img
-          src='public/assets/shopping-cart.png'
+          src='/assets/shopping-cart.png'
           className='addToCartIcon smallIcon'
         ></img>
         Add to Cart

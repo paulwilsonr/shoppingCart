@@ -30,7 +30,7 @@ function AboutPage ({ cartArr }) {
           <a href='https://github.com/paulwilsonr'>
             <img
               className='smallIcon'
-              src='public/assets/github-mark.svg' 
+              src='/assets/github-mark.svg' 
               alt='link to my github'
             ></img>
           </a>
